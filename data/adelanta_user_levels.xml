@@ -1,0 +1,15 @@
+<!-- data/adelanta_user_levels.xml -->
+<odoo>
+    <record id="nivel_1" model="adelanta.user.level">
+        <field name="name">Nivel 1</field>
+        <field name="code">nivel_1</field>
+    </record>
+    <record id="nivel_2" model="adelanta.user.level">
+        <field name="name">Nivel 2</field>
+        <field name="code">nivel_2</field>
+    </record>
+    <record id="nivel_3" model="adelanta.user.level">
+        <field name="name">Nivel 3</field>
+        <field name="code">nivel_3</field>
+    </record>
+</odoo>
