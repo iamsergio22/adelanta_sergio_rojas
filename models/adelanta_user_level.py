@@ -1,5 +1,3 @@
-# models/adelanta_user_level.py
-
 from odoo import models, fields
 
 class AdelantaUserLevel(models.Model):

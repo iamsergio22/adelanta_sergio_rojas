@@ -1,5 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <data>
-        
-    </data>
+    <record id="view_payment_status_tracking_graph" model="ir.ui.view">
+        <field name="name">payment.status.tracking.graph</field>
+        <field name="model">payment.status.tracking</field>
+        <field name="arch" type="xml">
+            <graph string="Tracking de status">
+                <field name="fecha" type="row" interval="day"/>
+                <field name="estado_pago" type="col" />
+                <field name="cantidad" type="measure" />
+            </graph>
+        </field>
+    </record>
+
+    <record id="action_payment_status_tracking_graph" model="ir.actions.act_window">
+        <field name="name">Tracking de status</field>
+        <field name="res_model">payment.status.tracking</field>
+        <field name="view_mode">graph</field>
+        <field name="target">main</field>
+        <field name="context">{}</field>        
+    </record>  
+          
+    <menuitem
+        id="menu_payment_status_tracking_graph"
+        name="Grafica de Estados de Pago"
+        parent="account.menu_finance_receivables"
+        action="action_payment_status_tracking_graph"
+        groups="account.group_account_user"
+        sequence="320" />
 </odoo>

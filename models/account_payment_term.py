@@ -36,7 +36,6 @@ class AccountPaymentTerm(models.Model):
         foreign_rounding_amount = 0
         company_rounding_amount = 0
         result = []
-        print("NUEVO desde mi modulo")
 
         # ---------------------- added these lines ----------------------
         initial_fee = 0.0
