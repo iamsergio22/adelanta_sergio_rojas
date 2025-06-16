@@ -1,6 +1,6 @@
 {
     'name': 'Adelanta - Niveles, Plazos y Pagos',
-    'version': '2.0',
+    'version': '2.5',
     'summary': 'Control de plazos de pago por nivel de usuario y vista de estados de pago.',
     'description': '''
         - Define niveles de usuario (Nivel 1, 2, 3)
@@ -10,7 +10,7 @@
     ''',
     'author': 'Sergio Rojas',
     # 'category': 'Accounting',
-    'depends': ['account_accountant','account', 'mail', 'base'],
+    'depends': ['sale_management','account_accountant','account', 'mail', 'base'],
     'data': [
         'security/ir.model.access.csv',
         'data/adelanta_user_levels.xml',        
